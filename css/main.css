@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Lato:wght@300;400;700;900&family=Nanum+Gothic:wght@700;800&family=Poppins:wght@700&family=Raleway:wght@100;300&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,200;0,300;0,800;1,200;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Lato:wght@300;400;700;900&family=Nanum+Gothic:wght@700;800&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@100;300&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:ital,wght@0,200;0,300;0,800;1,200;1,700&display=swap');
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+}
+
+.container {
+    max-width: 1250px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 18px 70px;
+    background-color: var(--pink);
+    border-radius: 30px;
+    color: #fff;
+    transition: all 0.1s;
+    display: inline-block;
+    box-shadow: 5px 10px 20px #97979781;
+}
+
+.btn-outline {
+    background-color: transparent;
+    padding: 5px 15px;
+    color: var(--light-pink);
+    border: 1px solid var(--light-pink);
+    box-shadow: none;
+}
+
+.btn-outline:hover {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: var(--light-pink);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ---------------------navbar styling----------------- */
+nav .flex {
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* ---------------------hero section styling----------------- */
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+
+}
+
+.hero-section {
+    margin-top: 100px;
+}
+
+.hero-section .grid {
+    row-gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    grid-column: 1/3;
+}
+
+.hero-text p {
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+.hero-section img {
+    grid-column: 1/3;
+    width: 60%;
+    margin: 50px auto;
+}
+
+/* ---------------------stats styling----------------- */
+.stats {
+    margin-bottom: 80px;
+}
+
+.stats img {
+    position: relative;
+    width: 30px;
+    left: -60px;
+}
+
+.stats div h2 {
+    font-size: 60px;
+}
+
+
+/* --------------------- all main sections styling----------------- */
+
+.sections {
+    padding: 50px 30px;
+    background-color: var(--very-pale-blue);
+    position: relative;
+}
+
+.sections img {
+    width: 70%;
+    justify-self: center;
+}
+
+.sections-text {
+    align-self: center;
+}
+
+.sections-text p {
+    width: 80%;
+}
+
+.sections-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.flowing-conversations {
+    background-color: transparent;
+}
+
+/* ---------------------smain sections top&bottom svgs styling----------------- */
+
+.sec-top {
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+.sec-top-mob {
+    display: none;
+}
+
+.sec-bottom-mob {
+    display: none;
+}
+
+.footer-top {
+    margin-bottom: -5px;
+}
+
+.footer-top-mob {
+    display: none;
+}
+
+
+/* ---------------------(ready to build) section styling----------------- */
+
+.ready-to-build {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.ready-to-build h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+/* ---------------------footer styling----------------- */
+
+footer {
+    padding: 50px 0;
+    background-color: var(--very-dark-cyan);
+    color: #fff;
+}
+
+.footer-logo {
+    width: 280px;
+}
+
+/* phone&email icons */
+.contact-info img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.about {
+    width: 60%;
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.subscribe p {
+    margin: 30px 0;
+    width: 65%;
+}
+
+.subscribe h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.social {
+    margin: 70px 0;
+}
+
+.social a {
+    transition: transform 0.2s;
+}
+
+.social i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #fff;
+    transition: transform 0.2s;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+.footer-btn {
+    padding: 10px 35px;
+    background-color: var(--pink);
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.1s;
+    display: inline-block;
+
+}
+
+.send-email {
+    margin: 50px 0;
+}
+
+.send-email input {
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.send-email input:focus {
+    outline: none;
+}
+
+footer .grid {
+    gap: 30px;
+}
+
+@media(max-width:768px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav .btn-outline {
+        display: none;
+    }
+
+    .hero-section {
+        margin-top: 60px;
+    }
+
+
+    .stats .container {
+        margin: 20px auto;
+    }
+
+    .stats div {
+        margin-bottom: 30px;
+    }
+
+    .sections {
+        row-gap: 20px;
+    }
+
+    .sections-text {
+        margin-top: 50px;
+        text-align: center;
+        grid-row: 2;
+    }
+
+    .sections-text p {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .sections {
+        padding: 30px 0px;
+    }
+
+    /* ---------------------main sections top&bottom svgs styling----------------- */
+    .sec-top {
+        display: none;
+    }
+
+    .sec-bottom {
+        display: none;
+    }
+
+    .sec-top-mob {
+        display: block;
+    }
+
+    .sec-bottom-mob {
+        display: block;
+    }
+
+    .footer-top {
+        display: none;
+    }
+
+    .footer-top-mob {
+        display: block;
+    }
+
+    /* ---------------------footer styling----------------- */
+
+    footer {
+        padding: 50px 0 0px;
+    }
+
+    .subscribe .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-btn {
+        margin-top: 20px;
+    }
+
+    .subscribe p {
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .info {
+        grid-row: 2;
+        margin-top: 20px;
+    }
+
+    .send-email {
+        margin: 30px 0;
+    }
+
+
+}
